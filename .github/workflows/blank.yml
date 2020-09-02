@@ -30,5 +30,5 @@ jobs:
         shell: Rscript {0}
 
       - name: Lint
-        run: lintr::lint_dir(linters = lintr::with_defaults(assignment_linter = NULL, line_length_linter = NULL, spaces_left_parentheses_linter = NULL), pattern = '[.]R$|[.]Rmd')
+        run: lintr::lint("test.R")
         shell: Rscript {0}
